@@ -45,7 +45,7 @@ function parametricLines() {
     blueVal = map(x + y, 0, width + height, 0, 255);
   
     stroke(redVal, greenVal, blueVal, alphaVal);
-    fill(greenVal, 255, blueVal, alphaVal);
+    fill(redVal, 255, blueVal, alphaVal);
     x = x + speedX;
     y = y + speedY;
   
@@ -97,7 +97,7 @@ function parametricLines() {
     noStroke();
     
     blueVal = map(posY, 0, height, 0, 255);
-    fill(0, 0, blueVal, alphaVal / 2);
+    fill(240, 0, blueVal, alphaVal / 2);
     
     let angle = TWO_PI / int(npoints);
     let halfAngle = angle / 2.0;
